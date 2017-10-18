@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TimePicker
+        android:id="@+id/dialog_timer_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <RadioGroup
+        android:id="@+id/dialog_timer_rg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_time"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <RadioButton
+            android:id="@+id/dialog_timer_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_power_black_64dp"
+            android:drawableTint="@color/colorWhite"/>
+
+        <RadioButton
+            android:id="@+id/dialog_timer_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:drawableLeft="@drawable/ic_power_black_64dp"
+            android:drawableTint="@color/colorRed"/>
+
+    </RadioGroup>
+
+    <CheckedTextView
+        android:id="@+id/dialog_timer_sun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_sun"
+        android:textColor="@color/selector_text_accent_gray"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_rg"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <CheckedTextView
+        android:id="@+id/dialog_timer_mon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_mon"
+        android:textColor="@color/selector_text_accent_gray"
+        app:layout_constraintLeft_toRightOf="@+id/dialog_timer_sun"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_rg"/>
+
+    <CheckedTextView
+        android:id="@+id/dialog_timer_tue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_tue"
+        android:textColor="@color/selector_text_accent_gray"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_rg"
+        app:layout_constraintLeft_toRightOf="@+id/dialog_timer_mon"
+        android:layout_marginLeft="16dp"/>
+
+    <CheckedTextView
+        android:id="@+id/dialog_timer_wed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_wed"
+        android:textColor="@color/selector_text_accent_gray"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_rg"
+        app:layout_constraintLeft_toRightOf="@+id/dialog_timer_tue"
+        android:layout_marginLeft="16dp"/>
+
+    <CheckedTextView
+        android:id="@+id/dialog_timer_thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_thu"
+        android:textColor="@color/selector_text_accent_gray"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_rg"
+        app:layout_constraintLeft_toRightOf="@+id/dialog_timer_wed"
+        android:layout_marginLeft="16dp"/>
+
+    <CheckedTextView
+        android:id="@+id/dialog_timer_fri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_fri"
+        android:textColor="@color/selector_text_accent_gray"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_rg"
+        app:layout_constraintLeft_toRightOf="@+id/dialog_timer_thu"
+        android:layout_marginLeft="16dp"/>
+
+    <CheckedTextView
+        android:id="@+id/dialog_timer_sat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/week_sat"
+        android:textColor="@color/selector_text_accent_gray"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_rg"
+        app:layout_constraintLeft_toRightOf="@+id/dialog_timer_fri"
+        android:layout_marginLeft="16dp"/>
+
+    <ImageButton
+        android:id="@+id/dialog_timer_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_delete_black_48dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_enable"/>
+
+    <ImageButton
+        android:id="@+id/dialog_timer_undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/ic_undo_black_48dp"
+        app:layout_constraintRight_toLeftOf="@+id/dialog_timer_check"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_enable"/>
+
+
+    <ImageButton
+        android:id="@+id/dialog_timer_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:background="@android:color/transparent"
+        android:tint="@color/colorWhite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@drawable/ic_check_black_48dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_enable"/>
+
+    <Switch
+        android:id="@+id/dialog_timer_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Switch"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_timer_sun"/>
+
+</android.support.constraint.ConstraintLayout>

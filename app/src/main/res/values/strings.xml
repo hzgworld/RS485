@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">RS485</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="password">Password</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="skip">Skip</string>
+    <string name="input_empty">Input can\'t be empty</string>
+    <string name="psw_len_less_than_6">Password must be at least 6 characters.</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="smartlink">SmartLink</string>
+    <string name="device">Device</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ssid">SSID</string>
+    <string name="start">Start</string>
+    <string name="no_wifi_connected">No WiFi Connected.</string>
+    <string name="cancel">Cancel</string>
+    <string name="config_wifi_dev_to_router">Configuring WiFi device to connect the router.</string>
+    <string name="smartlink_tips">1. Connect your phone to the router\n2. Enter the password of the router\n3. Press the button of the wifi device\n4.
+        Click START to config the wifi device connect to the router</string>
+    <string name="scan_local_device">Scan Local Device</string>
+    <string name="scanning">Scanning</string>
+    <string name="place_holder">placeholder</string>
+    <string name="not_available">N/A</string>
+    <string name="week_sun">Sun</string>
+    <string name="week_mon">Mon</string>
+    <string name="week_tue">Tue</string>
+    <string name="week_wed">Wed</string>
+    <string name="week_thu">Thu</string>
+    <string name="week_fri">Fri</string>
+    <string name="week_sat">Sat</string>
+    <string name="turn_on">Turn On</string>
+    <string name="turn_off">Turn Off</string>
+</resources>
